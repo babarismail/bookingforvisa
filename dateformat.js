@@ -12,7 +12,9 @@
 function format(idFrom, idTo) {
     var dateToConvert = document.getElementById(idFrom).value;
     var dateObj = new Date(dateToConvert);
-    var months = ["JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"];
-    document.getElementById(idTo).value = dateObj.getDate() + " " + months[dateObj.getMonth()] + " " + dateObj.getFullYear();
+    if (!isNaN( dateObj.getTime() )) {
+        var months = ["JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"];
+        document.getElementById(idTo).value = dateObj.getDate() + " " + months[dateObj.getMonth()] + " " + dateObj.getFullYear();
+    }
     
 }
