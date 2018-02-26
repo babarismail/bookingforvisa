@@ -15,6 +15,8 @@ function format(idFrom, idTo) {
     if (!isNaN( dateObj.getTime() )) {
         var months = ["JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"];
         document.getElementById(idTo).value = dateObj.getDate() + " " + months[dateObj.getMonth()] + " " + dateObj.getFullYear();
+    } else {
+        document.getElementById(idTo).value = "";
     }
     
 }
