@@ -3,12 +3,12 @@ var nameIds = ["0000000c", "00000010", "00000014", "00000018", "0000001c", "0000
 var formattedNameIds = ["0000000e", "00000012", "00000016", "0000001a", "0000001e", "00000022", "00000026", "0000002a"];
 
 ;(function() {
-    for(i = 0; i < 8; i++) {
+    /*for(i = 0; i < 8; i++) {
         var targetNode = document.querySelector('[data-hash="' + ids[i] + '"]').children.item(2).children.item(0);
         var config = { attributes: true, childList: true, subtree: true };
         var observer = new MutationObserver(callback);
         observer.observe(targetNode, config);
-    }
+    }*/
     //for(i = 0; i < 8; i++) {
         var title = document.querySelector('[data-hash="0000000c"]').children.item(2).children.item(0).children.item(0);
         var fn = document.querySelector('[data-hash="0000000c"]').children.item(2).children.item(1);
