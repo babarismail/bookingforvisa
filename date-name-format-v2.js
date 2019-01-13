@@ -2,7 +2,7 @@ var ids = ["0000002e", "00000036", "0000003e", "00000046", "0000004e", "00000056
 var nameIds = ["0000000c", "00000010", "00000014", "00000018", "0000001c", "00000020", "00000024", "00000028"];
 var formattedNameIds = ["0000000e", "00000012", "00000016", "0000001a", "0000001e", "00000022", "00000026", "0000002a"];
 
-;(function() {
+document.body.onload = function() {
     /*for(i = 0; i < 8; i++) {
         var targetNode = document.querySelector('[data-hash="' + ids[i] + '"]').children.item(2).children.item(0);
         var config = { attributes: true, childList: true, subtree: true };
@@ -65,7 +65,7 @@ var formattedNameIds = ["0000000e", "00000012", "00000016", "0000001a", "0000001
         title.onchange = function() {updateFormattedName("00000028", "0000002a");}
         fn.onchange = function() {updateFormattedName("00000028", "0000002a");}
         ln.onchange = function() {updateFormattedName("00000028", "0000002a");}
-})();
+}
 
 function callback(mutationsList, observer) {
     for(var mutation of mutationsList) {
