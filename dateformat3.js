@@ -1,6 +1,6 @@
 ;(function() {
 
-        //registering onchange for dates
+        //registering onchange for dates with some change
 		document.getElementById("id123-control46081485").onchange = function() {formatDate("id123-control46081485", "id123-control46081486")};
 		document.getElementById("id123-control46081489").onchange = function() {formatDate("id123-control46081489", "id123-control46081490")};
 		document.getElementById("id123-control46081493").onchange = function() {formatDate("id123-control46081493", "id123-control46081494")};
